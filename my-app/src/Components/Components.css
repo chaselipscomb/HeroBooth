@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+.menuContainer {
+    width: 100vw;
+    display:none;
+}
+.mobileLogin {
+    color:white;
+}
+.menuContainer :first-child {
+    display:flex;
+    justify-content: space-between;
+}
+.navimage {
+    height: 40px;
+    margin: 2px;
+}
+.navimagediv {
+    display:flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+@media only screen and (max-width:870px) {
+    .myNav {
+        display: none;
+    }
+}
+@media only screen and (max-width:870px) {
+    .menuContainer {
+        display: block;
+    }
+}
