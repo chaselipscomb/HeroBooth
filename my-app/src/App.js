@@ -15,7 +15,7 @@ class App extends Component {
         <Navigation />
           <Route exact path='/' component={Home} />
           <Route exact path="/Characters" component={Characters} />
-          {/* <Foot /> */}
+          <Foot />
           </div>
       </HashRouter>
     );

@@ -60,6 +60,33 @@
 .bar {
     flex-grow: 1;
 }
+.bio {
+    display:flex;
+    margin-top: 5vh;
+    width: 100%;
+}
+.biography {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    width: 50%;
+}
+.appearance {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    width: 50%;
+}
+.descriptionbarrier {
+    display: none;
+}
+.thinborder {
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
 @media only screen and (max-width:870px) {
     .charactertoplayer {
         flex-flow: column;
@@ -73,6 +100,27 @@
     }
     .numbercircle {
         margin: 2vh 0 2vh;
+    }
+    
+}
+@media only screen and (max-width:574px) {
+.row {
+    padding: 2vw;
+}
+}
+@media only screen and (max-width:550px) {
+    .bio {
+        flex-flow: column;
+        align-items: center;
+    }
+    .descriptionbarrier {
+        display:block;
+    }
+    .biography {
+        width: 80%;
+    }
+    .appearance {
+        width: 80%;
     }
 }
 @media only screen and (max-width:415px) {
