@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function PageCards() {
     return (
@@ -11,7 +12,7 @@ function PageCards() {
                             <img class="rounded-circle" src="https://www.superherodb.com/pictures2/portraits/10/100/140.jpg" alt="Generic placeholder image" width="140" height="140" />
                             <h2>Characters</h2>
                             <p>Statistics and information particular to each character can be found here. Featuring combat statistics, character alliances, and background information on each Character.</p>
-                            <p><a class="btn btn-secondary" href="#Characters" role="button">View details »</a></p>
+                            <button class="btn btn-secondary"><Link to="/Characters" className="pagecardlink">Search Characters »</Link></button>
                         </center>
                     </div>
 
@@ -21,7 +22,7 @@ function PageCards() {
                             <img class="rounded-circle" src="https://www.superherodb.com/pictures2/portraits/10/100/53.jpg" alt="Generic placeholder image" width="140" height="140" />
                             <h2>Compare</h2>
                             <p>Compare characters against one another to find out which character has stronger combat statistics. Each character has 6 categories which include: Intelligence, Power, Speed, Durability, Strength, and Combat.</p>
-                            <p><a class="btn btn-secondary" href="#Compare" role="button">View details »</a></p>
+                            <button class="btn btn-secondary"><Link to="/Characters" className="pagecardlink">Search Characters »</Link></button>
                         </center>
                     </div>
 
@@ -35,14 +36,9 @@ function PageCards() {
                         </center>
                     </div>
                 </div>
-
-                <hr class="featurette-divider" />
                 </div>
 
-                <footer class="container">
-                    <p class="float-right"><a href="#">Insert LinkedIn and Github</a></p>
-                    <p>© 2019-2020 Chase Lipscomb, Inc.</p>
-                </footer>
+               
                
         </React.Fragment>
     )

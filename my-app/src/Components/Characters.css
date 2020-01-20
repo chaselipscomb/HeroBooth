@@ -1,0 +1,88 @@
+.searchbardiv {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.charactermargin {
+    margin-top: 5vh;
+}
+.charactertoplayer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.characterimage {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.charactername {
+    display:flex;
+    align-items: center;
+    flex-flow: column;
+}
+.numandtooltip {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.combatscore {
+    display: none;
+}
+.numandtooltip:hover :last-child{
+    display: block;
+}
+.numbercircle {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 179, 212);
+    border-radius: 50%;
+    border-style: solid;
+    font-size: 40px;
+}
+.statisticbars {
+    width: 100%;
+    margin-top: 5vh;
+    display:flex;
+    flex-flow: column;
+}
+.statbar {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.bar {
+    flex-grow: 1;
+}
+@media only screen and (max-width:870px) {
+    .charactertoplayer {
+        flex-flow: column;
+    }
+    .characterimage {
+        width: 400px;
+        height: 400px;
+    }
+    .charactername {
+        order: 1;
+    }
+    .numbercircle {
+        margin: 2vh 0 2vh;
+    }
+}
+@media only screen and (max-width:415px) {
+.characterimage {
+    width: 300px;
+    height: 300px;
+}
+.numbercircle {
+    height: 80px;
+    width: 80px;
+    font-size: 20px;    
+}
+}

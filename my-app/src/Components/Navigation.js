@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -6,17 +7,17 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
+import './HomeNavFootComponents.css';
 
-import './Components.css';
 function Navigation() {
 
     return (
         <React.Fragment>
             <div className="myNav">
                 <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#Home">Hero Booth</Navbar.Brand>
+                    <Navbar.Brand ><Link to="/" className="mainlink">Hero Booth</Link></Navbar.Brand>
                     <Nav className="mr-auto">
-                        <Nav.Link href="#Characters">Characters</Nav.Link>
+                        <Nav.Link ><Link to="/Characters" className="link">Characters</Link></Nav.Link>
                         <Nav.Link href="#Compare">Compare</Nav.Link>
                         <Nav.Link href="#Results">Results</Nav.Link>
                     </Nav>
@@ -38,12 +39,12 @@ function Navigation() {
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">Search</Dropdown.Item>
+                                <Dropdown.Item href="/Characters">Search</Dropdown.Item>
                                 <Dropdown.Item href="#/action-2">Versus</Dropdown.Item>
                                 <Dropdown.Item href="#/action-3">Results</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
-                        <Navbar.Brand href="#Home">Hero Booth</Navbar.Brand>
+                        <Navbar.Brand href="/">Hero Booth</Navbar.Brand>
                         <a className="mobileLogin" href="#">Login</a>
                 </Navbar>
             </div>

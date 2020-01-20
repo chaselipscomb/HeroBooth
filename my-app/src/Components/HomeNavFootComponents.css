@@ -21,6 +21,34 @@
     justify-content: center;
     flex-grow: 1;
 }
+.mainlink {
+    color:rgb(231, 229, 229)
+}
+.mainlink:hover {
+    color: white;
+}
+.link {
+    color: rgb(167, 167, 167);
+}
+.link:hover {
+    color: rgb(196, 196, 196)
+}
+.pagecardlink {
+    color: white;
+}
+.pagecardlink:hover {
+    color: white;
+}
+/* .myfooter {
+    position: fixed; 
+    left: 0 ; right: 0; bottom: 0; 
+    height:[footer-height];
+}
+.wrapper {
+    min-height:70vw; 
+    position:relative; 
+    padding-bottom:[footer-height]
+} */
 @media only screen and (max-width:870px) {
     .myNav {
         display: none;
