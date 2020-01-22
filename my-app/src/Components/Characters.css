@@ -87,6 +87,55 @@
     padding-top: 5px;
 
 }
+.comparenavbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.comparecontainer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+.winnercontainer {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+.winnerimage {
+    width: 300px;
+    border-radius: 5%;
+    border: 5px solid black;
+}
+@media only screen and (max-width:992px) {
+    .comparecontainer {
+        flex-flow: column;
+    }
+    .comparecontainer :nth-child(1){
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
+    .winnercontainer {
+        order: 1;
+    }
+    .comparenavbar {
+        flex-flow:column;
+    }
+    .compareheader {
+        display: none;
+    }
+}
+.comparenavbar :first-child {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.comparenavbar :last-child {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width:870px) {
     .charactertoplayer {
         flex-flow: column;

@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Form from 'react-bootstrap/Form';
+import API from '../API/API';
+import store from '../store';
 
 function SearchPicture() {
+
+    //console.log(store.getState().searchCharacter.name);
+
+    //const obj = { name: 'Chase', altname: 'Chazz' }
+
+    //store.dispatch({ type: 'changesearchcharacter', data: obj })
+    //let searchCharacter = store.getState().searchCharacter;
+    const searchChar = () => {
+        API.search().then(res => { console.log(res) })
+        // .catch(error => { console.log(error)})
+    }
+
+    searchChar();
+
     return (
         <>
             <Navbar bg="light" variant="light">
@@ -23,8 +39,8 @@ function SearchPicture() {
                         <div className="charactertoplayer">
                             <img className="characterimage" src="https://www.superherodb.com/pictures2/portraits/10/100/53.jpg" alt="Generic placeholder image" />
                             <div className="charactername">
-                                <h1>Hulk</h1>
-                                <h4>Bruce Banner</h4>
+                                <h1>seachCharacter.name</h1>
+                                <h4>searchCharacter.altname</h4>
                             </div>
                             <div className="numandtooltip">
                                 <div className="numbercircle"><strong>250</strong></div>

@@ -8,9 +8,10 @@ import FormControl from 'react-bootstrap/FormControl';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 import './HomeNavFootComponents.css';
+import GlobalState from '../GlobalState';
 
 function Navigation() {
-
+    
     return (
         <React.Fragment>
             <div className="myNav">
@@ -26,6 +27,7 @@ function Navigation() {
                     <a href="https://www.dccomics.com/characters"><img className="navimage" src="https://www.slashfilm.com/wp/wp-content/images/dcfilms-logo-wonderwoman.jpg" alt="marvel" /></a>
                     </div>
                     <Form inline>
+                        <Link to="/Login" className="mobileLogin">Login</Link>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </Form>
@@ -45,7 +47,7 @@ function Navigation() {
                             </Dropdown.Menu>
                         </Dropdown>
                         <Navbar.Brand href="/">Hero Booth</Navbar.Brand>
-                        <a className="mobileLogin" href="#">Login</a>
+                        <Link className="mobileLogin" to="/Login">Login</Link>
                 </Navbar>
             </div>
         </React.Fragment>

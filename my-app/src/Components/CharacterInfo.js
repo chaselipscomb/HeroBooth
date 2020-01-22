@@ -50,12 +50,12 @@ function CharacterInfo() {
                         <div className="appearance">
                             <p className="thinborder">Gender: <span>Male</span></p>
                             <p className="thinborder">Race: <span>Human</span></p>
-                            <p className="thinborder">Height<span>6'2</span></p>
-                            <p className="thinborder">Weight<span>210 lbs</span></p>
+                            <p className="thinborder">Height: <span>6'2</span></p>
+                            <p className="thinborder">Weight: <span>210 lbs</span></p>
                             <p className="thinborder">Eye Color: <span>Green</span></p>
                             <p className="thinborder">Hair Color: <span>Blonde</span></p>
                             <p className="thinborder">Occupation: <span>Ownder of Lexcorp</span></p>
-                            <p className="thinborder">Affiliations" <span>"Injustice Gang, Injustice League"</span></p>
+                            <p className="thinborder">Affiliations: <span>"Injustice Gang, Injustice League"</span></p>
 
                         </div>
                     </div>
